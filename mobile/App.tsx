@@ -22,8 +22,8 @@ export default function App() {
 
       <Button title='Botão 1' />
       <Button title='Botão 2' />
-      <Button title='Botão 3' />
-      
+      <Button title='Botão a' />
+
       <StatusBar style="auto" />
     </View>
   );
