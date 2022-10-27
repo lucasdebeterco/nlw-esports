@@ -1,9 +1,13 @@
-import express, { request, response } from 'express'
+import express, { request, response } from 'express';
+import { PrismaClient } from '@prisma/client';
 
 const app = express()
+const prisma = new PrismaClient()
 
-app.get('/games', (request, response) => {
-    return response.json(['']);
+app.get('/games', async (request, response) => {
+    const games = await prisma.game.findMany()
+
+    return  response.json(games)
 })
 
 app.post('/ads', (request, response) => {
