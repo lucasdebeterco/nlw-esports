@@ -26,7 +26,7 @@ function App() {
     
       <div className='grid grid-cols-6 gap-6 mt-16'>
         <GameBanner bannerUrl='/game-1.png' title='League of Legends' adsCount={5} />
-        <GameBanner bannerUrl='/game-2.png' title='League of Legends' adsCount={5} />
+        <GameBanner bannerUrl='/game-2.png' title='Dota 2' adsCount={2} />
       </div>
 
       <CreateAdBanner />
